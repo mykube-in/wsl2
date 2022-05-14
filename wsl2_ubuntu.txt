@@ -2,7 +2,7 @@
 apt update && apt upgrade -y
 
 # Install the required packages for SystemD
-apt install -yqq fontconfig daemonize
+apt install -yqq fontconfig daemonize net-tools
 
 # Create the starting script for SystemD
 vi /etc/profile.d/00-wsl2-systemd.sh
@@ -19,5 +19,4 @@ fi
 
 
 
-sudo systemctl restart systemd-resolved
-sudo apt update
+CLOSE WINDOWS AND REOPEN UBUNTU APP.
